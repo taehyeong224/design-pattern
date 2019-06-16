@@ -1,8 +1,9 @@
 import { PhoneGroup } from "./PhoneGroup";
 import { Phone } from "./Phone";
 import { PhoneGroupIterator } from "./PhoneGroupIterator";
+import { Play } from "../Play";
 
-export class IteratorMain {
+export class IteratorMain extends Play {
     public main(): void {
         const phoneGroup: PhoneGroup = new PhoneGroup(5);
         phoneGroup.addItem(new Phone("gogo"));

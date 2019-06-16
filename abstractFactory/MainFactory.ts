@@ -3,8 +3,9 @@ import { Link } from "./Link";
 import { Tray } from "./Tray";
 import { Page } from "./Page";
 import { ListFactory } from "./ListFactory";
+import { Play } from "../Play";
 
-export class MainFactory {
+export class MainFactory extends Play {
     public main(): void {
         const factory: Factory = Factory.getFactory(ListFactory);
 

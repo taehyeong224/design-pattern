@@ -2,8 +2,9 @@ import { PizzaStore } from "./interface/PizzaStore";
 import { NYPizzaStore } from "./store/NYPizzaStore";
 import { ChicagoPizzaStore } from "./store/ChicagoPizzaStore";
 import { Pizza } from "./interface/Pizza";
+import { Play } from "../Play";
 
-export class PizzaDrive {
+export class PizzaDrive extends Play {
     public main(): void {
         const nyStore: PizzaStore = new NYPizzaStore();
 		const chicagoStore: PizzaStore = new ChicagoPizzaStore();

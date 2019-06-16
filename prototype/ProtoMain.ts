@@ -2,8 +2,9 @@ import { Manager } from "./Manager";
 import { MessageBox } from "./MessageBox";
 import { Product } from "./Product";
 import { UnderlinePen } from "./UnderlinePen";
+import { Play } from "../Play";
 
-export class ProtoMain {
+export class ProtoMain extends Play {
     public main(): void {
         const manager: Manager = new Manager();
         const mbox: MessageBox = new MessageBox("*");
