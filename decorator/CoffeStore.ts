@@ -12,17 +12,13 @@ export class CoffeeStore extends Play {
         console.log(beverage.getDescription() + " cost : " + beverage.cost());
 
         let beverage1: Beverage = new DarkRoast();
-        beverage1 = new Mocha(beverage1);
-        beverage1 = new Mocha(beverage1);
-        beverage1 = new Whip(beverage1);
-
+        beverage1 = new Mocha(new Mocha(new Whip(beverage1)));
         console.log(beverage1.getDescription()+ " cost : "+beverage1.cost());
 
 		
 
 		let beverage2: Beverage = new HouseBlend();
-		beverage2 = new Mocha(beverage2);
-		beverage2 = new Whip(beverage2);
+		beverage2 = new Mocha(new Whip(beverage2));
 
         console.log(beverage2.getDescription() + " cost : " + beverage2.cost());
 	}
