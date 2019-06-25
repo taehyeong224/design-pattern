@@ -9,6 +9,7 @@ import { RemoteControlTest } from "./command/RemoteControlTest";
 import { CoffeeStore } from "./decorator/CoffeStore";
 import { Station } from "./observer/Station";
 import { Play } from "./Play";
+import { BridgeMain } from "./bridge/BridgeMain";
 
 const draw = (fun: Play, name: string) => {
     const boarder = "==========";
@@ -51,3 +52,6 @@ draw(decorator, "decorator");
 const observer = new Station();
 draw(observer, "observer");
 
+
+const bridge = new BridgeMain();
+draw(bridge, "bridge");
