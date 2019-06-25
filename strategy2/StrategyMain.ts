@@ -6,7 +6,7 @@ import { Hand } from "./Hand";
 export class StrategyMain {
     public main(): void {
         const player1: Player = new Player("켁", new WinningStrategy());
-        const player2: Player = new Player("엥", new ProbStrategy(3));
+        const player2: Player = new Player("엥", new ProbStrategy());
 
         for (let i = 0; i < 1000; i++) {
             const nextHand1: Hand = player1.nextHand();

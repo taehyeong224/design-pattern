@@ -2,7 +2,6 @@ import { Strategy } from "./Strategy";
 import { Hand } from "./Hand";
 
 export class ProbStrategy implements Strategy {
-    private random: number;
     private prevHandValue: number = 0;
     private currentHandValue: number = 0;
     private history: number[][] = [
@@ -11,13 +10,9 @@ export class ProbStrategy implements Strategy {
         [1, 1, 1]
     ];
 
-    constructor(range: number) {
-        this.setRandomNumber(range);
+    constructor() {
     }
 
-    public setRandomNumber(range): void {
-        this.random = Math.floor(Math.random() * range);
-    }
 
     public getRandomNumber(range: number): number {
         return Math.floor(Math.random() * range);
