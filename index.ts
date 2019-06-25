@@ -1,4 +1,4 @@
-import { MiniDuckSimulator } from "./stratgy/MiniDuckSimulator";
+import { MiniDuckSimulator } from "./strategy1/MiniDuckSimulator";
 import { PizzaDrive } from "./factory/PizzaDrive";
 import { TurkeyDrive } from "./adaptor/TurkeyDrive";
 import { IteratorMain } from "./iterator/IteratorMain";
@@ -10,6 +10,7 @@ import { CoffeeStore } from "./decorator/CoffeStore";
 import { Station } from "./observer/Station";
 import { Play } from "./Play";
 import { BridgeMain } from "./bridge/BridgeMain";
+import { StrategyMain } from "./strategy2/StrategyMain";
 
 const draw = (fun: Play, name: string) => {
     const boarder = "==========";
@@ -55,3 +56,7 @@ draw(observer, "observer");
 
 const bridge = new BridgeMain();
 draw(bridge, "bridge");
+
+
+const strategy2 = new StrategyMain();
+draw(strategy2, "strategy2")
