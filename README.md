@@ -21,7 +21,7 @@ npm run start
 
 👤 **kim tae hyeong**
 
-* Github: [@taehyoung](https://github.com/taehyoung)
+* Github: [@taehyeong224](https://github.com/taehyeong224)
 
 ## Show your support
 
